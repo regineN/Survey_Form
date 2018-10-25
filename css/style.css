@@ -1,0 +1,63 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    body {
+        background-color:indianred;
+        text-align:center;
+    }
+    .header {
+        margin-top:30px;
+    }
+    #title {
+        font-family:Arial, Helvetica, sans-serif;
+        text-align:center;
+        color:#fff;
+
+    }
+
+    .survey {
+        width:290px;
+        height:500px;
+        background-color:#fff;
+        margin:0 auto;
+        border-radius:2em;
+    }
+
+    .para {
+        padding-top:20px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        background-color:green;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    body {
+    background-color:blue;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    body {
+    background-color:pink;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    body {
+    background-color:yellow;
+    }
+}
