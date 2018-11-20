@@ -1,52 +1,742 @@
+/* SMACSS - https://smacss.com/book
+ ------------------------------------------------------------------ */
+
+ /*Base
+ ------------------------------------------------------------------ */
 html, body {
-    margin:0;
-    padding:0;
+overflow-x: hidden; 
+padding:0;
 }
 
-
 /* Small devices (landscape phones, 576px and up)*/
+/*Base
+ ------------------------------------------------------------------ */
+
 @media (max-width: 576px) {
     body {
-        background-color:indianred;
-        text-align:center;
+        background-color:rgb(205, 92, 92);
+        font-family:Arial, Helvetica, sans-serif;
+
     }
-    .header {
+
+/*Layout
+------------------------------------------------------------------ */
+    header {
         margin-top:30px;
     }
     #title {
-        font-family:Arial, Helvetica, sans-serif;
         text-align:center;
         color:#fff;
 
     }
 
+    .para {
+        padding-top:20px;
+        text-align:center;
+    }
+
+
+/*Form
+------------------------------------------------------------------ */
+
+    section {
+        height:100%;
+    }
+    .tab {
+        display:flex;
+        flex-direction:column;
+    }
+
+    label {
+        margin:10px;
+    
+    }
+
+    input::placeholder {
+        padding-left:10px;
+    }
+
+    button:hover {
+        animation-name:background-color;
+        animation-duration:500ms;
+    }
+
+    .survey button {
+        margin:0 auto;
+    }
+
+    .def-label{
+        list-style-type:none;
+        
+    }
+
+    @keyframes background-color {
+        100% {
+            background-color:#000;
+        }
+    }
+
+    .radio_label .label-def{
+        display:inline-block;
+        margin-top:-2px;
+        margin-left:-7px;
+        
+    }
+        
+
+    .def-label #definitely {
+        float:left;
+        margin-left:-17px;
+            
+    }
+
+    .def-label #maybe {
+        float:left;
+        margin-left:-17px;
+            
+    }
+
+    .def-label #sure {
+        float:left;
+        margin-left:-17px;
+        
+    }
+
     .survey {
         width:290px;
-        height:500px;
         background-color:#fff;
         margin:0 auto;
         border-radius:2em;
     }
 
-    .para {
-        padding-top:20px;
+    .input-form { 
+        border:1px solid;
+        width:240px;
+        height:30px;
+        margin-left:20px;    
+    
     }
+    
+    .input-type {
+        margin-bottom:20px;
+    }
+    
+    .description-label {
+        text-align:left;
+        padding-left:6px;
+    }
+
+    .desc-label {
+        text-align:left;
+        padding-left:10px;
+        padding-top:10px;
+    }
+
+
+    .check .lan{
+        padding-left:17px;
+        padding-top:5px;
+    }
+  
+    .check p{
+       padding-left:10px;
+    }
+
+    .lan .lang {
+        float:left;
+        margin-right:-16px;   
+    }
+
+    .lan label {
+        margin-left:35px;
+    }
+
+    #def-label input {
+        display:flex;
+        flex-direction:flex-start;
+    }
+
+    #dropdown {
+        border:1px solid;
+        width:150px;
+        height:30px;
+        display:flex;
+        flex-direction:column;  
+        margin-left:20px;
+        margin-top:10px; 
+        padding-top:5px;
+        padding-left:15px;
+    
+    }
+
+    
+   
+    /*comment
+------------------------------------------------------------------ */
+    textarea {
+    border:1px solid #000;
+    width:200px;
+    height:50px; 
+    }   
+    .comment-section {
+        text-align:center;
+    }
+    
+    .comment-section p {
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align:center;
+    }  
+    
+    @keyframes background-color {
+        100% {
+            background-color:#000;
+        }
+    }
+
+    button:hover {
+        animation-name:background-color;
+        animation-duration:500ms;
+    }
+
+    
+    #submit{
+        border:0px solid;
+        border-radius:4px;
+        color:#fff;
+        background-color:rgb(205, 92, 92);
+        width:96px;
+        height:50px;
+        margin-bottom:5px;
+        margin-top:5px;
+        
+    }
+
+    
+    
 }
 
 /*Small devices (landscape phones, 576px and up)*/
+/*Base
+ ------------------------------------------------------------------ */
+
 @media (min-width: 576px) and (max-width: 767.98px) {
     body {
         background-color:green;
+        font-family:Arial, Helvetica, sans-serif;
+        
     }
-}
 
+
+/*Layout
+------------------------------------------------------------------ */
+    header {
+        margin-top:30px;
+    }
+
+    #title {
+        text-align:center;
+        color:#fff;
+    }
+
+    .para {
+        padding-top:20px;
+        text-align:center;
+    }
+
+
+/*Form
+------------------------------------------------------------------ */
+    section {
+        height:100%;
+    }  
+
+    ul {
+        display:block;
+        margin-block-end:1rem;
+        margin-block-start:1em;
+        margin-inline-start: 9rem;    
+    }
+
+    .survey {
+        width:550px;
+        background-color:#fff;
+        margin:0 auto;
+        border-radius:2em;
+        
+    }
+
+
+   .tab label {
+        margin-left:120px;
+        
+    }
+    
+    .tab {
+        margin-top:20px;
+        text-align:center;
+
+    }
+
+    .input-form { 
+        border:1px solid;
+        width:240px;
+        height:30px;
+        margin-left:20px;    
+    
+    }
+    
+    .input-type {
+        margin-bottom:20px;
+    }
+
+    input::placeholder {
+        padding-left:10px;
+    }
+
+    .tab .description-label {
+        display: inline-block;
+        text-align: right;
+        width: 30%;
+        padding: 5px;
+        vertical-align: top;
+        margin-top: 10px;
+        margin-left:-100px;
+    }
+
+    .tab #dropdown {
+        border:1px solid;
+        width:150px;
+        height:30px;
+        margin-left:20px;
+        margin-top:20px;
+        padding-top:-2px;
+        padding-left:15px;
+    }
+
+    .desc-label{
+        margin-top:30px;
+    }
+    
+    
+    .def-label {
+        list-style-type:none;
+        margin-left:50px;
+        padding-top:10px;
+
+    }
+
+    .def-label #definitely {
+        float:left;
+        margin-left:-17px;    
+            
+    }
+
+    .def-label #maybe {
+        float:left;
+        margin-left:-17px;
+        
+            
+    }
+
+    .def-label #sure {
+        float:left;
+        margin-left:-17px;
+        
+        
+    }
+
+    .radio-form {
+        display:flex;
+        width:100%;
+        height:auto;
+        
+    }
+    
+    .radio-form .desc-label{
+        width: 40%;
+        padding: 5px;
+        display: inline-block;
+        text-align: right;
+        
+        
+    }
+
+    .radio-form .label-def {
+        padding-left:-16px;
+        
+       
+    }
+
+    .list-form {
+        width:50%;
+        margin-left:-50px;
+        padding-top:5px;
+           
+    }
+
+    .check {
+        display:flex;
+        width:100%;
+        height:auto;   
+        
+    }
+
+    .para_check {
+        width:50%;
+    }
+
+    .para_check p{
+        padding-left:70px;    
+        float:left;
+        margin-top:30px;
+        
+    }
+
+    .programs {
+        margin-top:25px;
+        
+    }
+
+    .lan .lang {
+        float:left;
+        margin-left:-17px;  
+            
+    } 
+    
+    .lan {
+        padding-top:10px;
+    }
+
+
+
+    /*comment
+------------------------------------------------------------------ */
+
+    .comment-section {
+        text-align:center;
+    }
+
+    .comment-section p {
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align:center;
+    }   
+
+
+    textarea {
+        border:1px solid #000;
+        width:200px;
+        height:50px;
+        margin-bottom:80px;
+       
+   
+    }
+
+    .text textarea {
+        margin:0 auto;
+    }
+
+    @keyframes background-color {
+        100% {
+            background-color:#000;
+        }
+    }
+
+    button:hover {
+        animation-name:background-color;
+        animation-duration:500ms;
+    }
+
+    #submit{
+        border:0px solid;
+        border-radius:4px;
+        color:#fff;
+        background-color:rgb(205, 92, 92);
+        width:96px;
+        height:50px;
+        margin-bottom:5px;
+        margin-top:5px;
+    
+    }
+ 
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     body {
     background-color:blue;
+    font-family:Arial, Helvetica, sans-serif;
     }
+
+    /*Layout
+------------------------------------------------------------------ */
+    header {
+    margin-top:30px;
+        }
+
+    #title {
+    text-align:center;
+    color:#fff;
+    }
+
+    .para {
+    padding-top:20px;
+    text-align:center;
+    }
+
+    /*Form
+------------------------------------------------------------------ */
+    section {
+    height:100%;
+    }  
+
+    ul {
+    display:block;
+    margin-block-end:1rem;
+    margin-block-start:1em;
+    margin-inline-start: 9rem;    
+    }
+
+    .survey {
+    width:550px;
+    background-color:#fff;
+    margin:0 auto;
+    border-radius:2em;
+    }
+
+    label {
+        margin:10px;
+    
+    }
+
+    input::placeholder {
+        padding-left:10px;
+    }
+
+    button:hover {
+        animation-name:background-color;
+        animation-duration:500ms;
+    }
+
+    .survey button {
+        margin:0 auto;
+    }
+
+    .tab label {
+        margin-left:120px;
+        
+    }
+    
+    .tab {
+        margin-top:20px;
+        text-align:center;
+
+    }
+
+    .input-form { 
+        border:1px solid;
+        width:240px;
+        height:30px;
+        margin-left:20px;    
+    
+    }
+    
+    .input-type {
+        margin-bottom:20px;
+    }
+
+    input::placeholder {
+        padding-left:10px;
+    }
+
+    .tab .description-label {
+        display: inline-block;
+        text-align: right;
+        width: 30%;
+        padding: 5px;
+        vertical-align: top;
+        margin-top: 10px;
+        margin-left:-100px;
+    }
+
+    .tab #dropdown {
+        border:1px solid;
+        width:150px;
+        height:30px;
+        margin-left:20px;
+        margin-top:20px;
+        padding-top:-2px;
+        padding-left:15px;
+    }
+
+
+    .def-label{
+        list-style-type:none;
+        
+    }
+
+    .def-label {
+        list-style-type:none;
+        margin-left:50px;
+        padding-top:10px;
+
+    }
+
+    .def-label #definitely {
+        float:left;
+        margin-left:-17px;    
+            
+    }
+
+    .def-label #maybe {
+        float:left;
+        margin-left:-17px;
+        
+            
+    }
+
+    .def-label #sure {
+        float:left;
+        margin-left:-17px;
+        
+        
+    }
+
+    .radio-form {
+        display:flex;
+        width:100%;
+        height:auto;
+        
+    }
+    
+    .radio-form .desc-label{
+        width: 40%;
+        padding: 5px;
+        display: inline-block;
+        text-align: right;
+        
+        
+    }
+
+    .radio-form .label-def {
+        padding-left:-16px;
+        
+       
+    }
+
+    .list-form {
+        width:50%;
+        margin-left:-50px;
+        padding-top:5px;
+           
+    }
+
+    .check {
+        display:flex;
+        width:100%;
+        height:auto;   
+        
+    }
+
+    .para_check {
+        width:50%;
+    }
+
+    .para_check p{
+        padding-left:70px;    
+        float:left;
+        margin-top:30px;
+        
+    }
+
+    .programs {
+        margin-top:25px;
+        
+    }
+
+    .lan .lang {
+        float:left;
+        margin-left:-17px;  
+            
+    } 
+    
+    .lan {
+        padding-top:10px;
+    }
+    .lan label {
+        margin-left:35px;
+    }
+
+    #def-label input {
+        display:flex;
+        flex-direction:flex-start;
+    }
+
+    #dropdown {
+        border:1px solid;
+        width:150px;
+        height:30px;
+        display:flex;
+        flex-direction:column;  
+        margin-left:20px;
+        margin-top:10px; 
+        padding-top:5px;
+        padding-left:15px;
+    
+    }
+       /*comment
+------------------------------------------------------------------ */
+
+    .comment-section {
+        text-align:center;
+    }
+
+    .comment-section p {
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align:center;
+    }   
+
+
+    textarea {
+        border:1px solid #000;
+        width:200px;
+        height:50px;
+        margin-bottom:80px;
+
+    }
+
+    .text textarea {
+        margin:0 auto;
+    }
+
+    #submit{
+    border:0px solid;
+    border-radius:4px;
+    color:#fff;
+    background-color:rgb(205, 92, 92);
+    width:96px;
+    height:50px;
+    margin-bottom:5px;
+    margin-top:5px;
+
+    }
+
+    button:hover {
+        animation-name:background-color;
+        animation-duration:500ms;
+    }
+
+    @keyframes background-color {
+        100% {
+            background-color:#000;
+        }
+    }
+
 }
+
+
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
